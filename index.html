@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <title>Travail Pratique #3</title>
+  <head>
+    <script language='javascript' src="js/jquery-3.1.1.min.js"></script>
+    <script language='javascript' src="js/display.js"></script>
+    <link rel='stylesheet' type='text/css' href="css/inputStyle.css">
+    <!-- <link rel='stylesheet' type='text/css' href="css/tableStyle.css"> -->
+  
+  </head>
+
+  <body>
+
+    <input type='button' class='button butEnreg' value="Connexion" onClick="visible('divConnect');invisible('divAjoutMem');" style="position:absolute;left:30%">
+    <div id="divConnect" style="position:absolute;top:20%;left:30%;display:none">
+
+<!-- ------------ Connecter des membres ------------- -->
+      <h3>Connexion Membre</h3><br><br>
+      
+      <form id="login" action="php/login.php" method='POST'>
+	Nom d'usager : <br><input type='text' class='enregIn' id="nomConn" name="nomConn"><br>
+	Mot de passe : <br><input type='password' class='inputPass' id="passConn" name="passConn"><br><br>
+	<input type='submit' class='butEnreg2' value="Connecter">
+      </form>
+    </div>
+
+    <input type='button' class='button butAff' value="Devenir Membre" onClick="visible('divAjoutMem');invisible('divConnect');" style="position:absolute;left:50%">
+    <div id="divAjoutMem" style="position:absolute;top:20%;left:50%;display:none">
+
+<!-- ------------ Ajouter un membre ------------- -->
+      <h3>Devenir Membre</h3><br><br>
+      
+      <form id="formAjoutMem" action="php/ajouterMem.php" method='POST'>
+	Nom: <br><input type='text' class='ajoutIn'
+				   id="nomAjout" name="nomAjout"><br>
+	Prenom: <br><input type='text' class='ajoutIn'
+				   id="prenomAjout" name="prenomAjout"><br>
+	Surnom: <br><input type='text' class='ajoutIn'
+				   id="surnomAjout" name="surnomAjout"><br>
+	Mot de passe : <br><input type='password' class='inputPass passAjout'
+				  id="passAjout" name="passAjout"><br>
+	<!-- Courriel : <br><input type='text' class='ajoutIn' -->
+	<!-- 		      id="mail" name="mail"><br><br> -->
+
+	<!-- <input type='hidden' name="action" value="ajouterMem"> -->
+	<input type='submit' class='butAjout2' value="Ajouter">
+	</form>
+    </div>
+
+  
+  </body>
+</html>

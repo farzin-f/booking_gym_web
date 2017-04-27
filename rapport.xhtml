@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>IFT3225 - TP3</title>
+    </head>
+    <body>
+        <h1>IFT3225 - TP3</h1>
+        <h2>Auteurs: Farzin Faridfar et Catherine Laprise</h2>
+        <h3>Choix de présentation</h3>
+        <ul>
+            <li>La page principale permet de s'identifier (Connexion) ou de créer un nouveau membre (Devenir membre). </li>
+            <li>Les joueurs ont accès aux menus suivants:
+                <ul>
+                    <li>Historique: permet à chaque joueur de visualiser les réservations qu'il a effectuées au cours du dernier mois.</li>
+                    <li>Disponibilités et réservation: permet de visualiser les réservations du prochain mercredi pour chaque terrain dans une grille horaire. Le joueur peut cliquer
+                        sur une plage horaire afin de la réserver. S'il a déjà réservé une plage horaire pour cette journée, il peut recliquer sur celle-ci
+                        afin d'annuler sa réservation. Nous avons choisi cet affichage afin de rassembler les fonctions en un seul espace. L'affichage de la grille se fait
+                        en combinant php et jQuery.</li>
+                </ul>
+                Les gestionnaires ont accès aux sections suivantes:
+                <ul>
+                    <li>Liste et historique des joueurs: permet de visualiser la liste des joueurs (incluant le gestionnaire) et leur historique du dernier mois.</li>
+                    <li>Disponibilités et réservation: comme pour les joueurs, permet de visualiser les terrains disponibles pour le prochain mercredi, d'effectuer une réservation,
+                        ou d'annuler une réservation. Toutefois, l'administrateur a également l'option de filtrer l'horaire par intervalle de temps (par exemple, de 10h à midi).</li>
+                </ul></li>
+        </ul>
+
+        <h3>Schéma de la base de données:</h3>
+        <p>
+            <img alt="Schéma" src="SchemaERD.png"/>
+        </p>
+        
+        <h3>Ce que nous avons appris durant ce travail</h3>
+        <ul>
+            <li>Nous avons appris à utiliser les fonctions de PHP. Notamment, nous avons découvert beaucoup de fonctionnalités très pratiques
+                par rapport au formattage des dates et heures.</li>
+            <li>Nous avons également appris à utiliser PHP pour accéder à notre base de données mysql et la modifier, grâce aux fonctions mysql_*.</li>
+            <li>Nous avons découvert quelques astuces pour utiliser PHP et JavaScript/jQuery en collaboration. Entre autres, pour la génération de la grille horaire,
+                nous nous sommes inspirés de la grille que nous avions créée pour le TP2 et nous avons utilisé des formulaires <i>hidden</i> dans le fichier PHP 
+                afin de pouvoir passer les informations récupérées dans JavaScript à notre page.</li>
+            <li>Nous avons appris à utiliser Ajax afin d'assurer la mise à jour des différentes sections en fonction des réservations ou annulations effectuées.</li>
+        </ul>
+        <h3>Liens vers les documents utilisés</h3>
+        <ul>
+            <li><a href="index.html">Page d'accueil du système de réservation</a></li>
+            <li>Fichiers source en format .zip: <a href="TP3_source.zip">Télécharger</a></li>
+
+        </ul>
+    </body>
+</html>
